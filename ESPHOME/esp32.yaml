@@ -27,6 +27,8 @@ wifi:
 
 captive_portal:
 
+wake_on_lan:   
+
 button:
   - platform: wake_on_lan
     name: "Ligar TV Samsung"
