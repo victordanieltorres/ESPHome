@@ -1,0 +1,33 @@
+esphome:
+  name: esp32
+  friendly_name: Esp32
+
+esp32:
+  board: esp32dev
+  framework:
+    type: esp-idf
+
+logger:
+
+api:
+  encryption:
+    key: "mstpQaVfjgvM2Wb2Dxqxt9Wpw8LKtd/k+763KKg+gXo="
+
+ota:
+  - platform: esphome
+    password: "ed38dac37d31c5fcdab1d3b80475bf39"
+
+wifi:
+  ssid: "SEU_WIFI"
+  password: "SUA_SENHA"
+
+  ap:
+    ssid: "Esp32 Fallback Hotspot"
+    password: "12345678"
+
+captive_portal:
+
+button:
+  - platform: wake_on_lan
+    name: "Ligar TV Samsung"
+    target_mac_address: FC:03:9F:0F:03:BF
